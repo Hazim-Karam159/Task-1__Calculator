@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Calculator using HTML, CSS, and JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="parent">
+      <section class="calculator">
+        <input class="display-box top" type="text" id="result" disabled />
+        <input class="display-box" type="text" id="finalResult" disabled />
+        <table>
+          <tr>
+            <td><button onclick="display('1')">1</button></td>
+            <td><button onclick="display('2')">2</button></td>
+            <td><button onclick="display('3')">3</button></td>
+            <td><button onclick="display('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="display('4')">4</button></td>
+            <td><button onclick="display('5')">5</button></td>
+            <td><button onclick="display('6')">6</button></td>
+            <td><button onclick="display('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="display('7')">7</button></td>
+            <td><button onclick="display('8')">8</button></td>
+            <td><button onclick="display('9')">9</button></td>
+            <td><button onclick="display('*')">*</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="display('0')">0</button></td>
+            <td><button onclick="calculate()" id="btn">=</button></td>
+            <td><button onclick="clearScreen()" id="btn">C</button></td>
+            <td><button onclick="display('/')">/</button></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <button onclick="backspace()" id="btn-wide">←</button>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
